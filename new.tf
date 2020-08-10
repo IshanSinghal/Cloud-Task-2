@@ -104,7 +104,7 @@ resource "null_resource" "storeInstanceIP"  {
 }
 
 
-//PARTITION FORMAT GIT CLONE
+//MOUNT EFS and GIT CLONE
 resource "null_resource" "mountAndgithub"  {
 
 	depends_on = [ aws_efs_mount_target.efs	]
